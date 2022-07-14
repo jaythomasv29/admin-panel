@@ -10,11 +10,11 @@ const data = [
  {name: 'May', Total: 900},
  {name: 'June', Total: 1900},
 ]
-function Chart() {
+function Chart({height = 375}) {
   return (
     <div className='chart'>
       <div className="title">Last 6 Months (Revenue)</div>
-      <ResponsiveContainer width={500} height={375}>
+      <ResponsiveContainer width={500} height={height}>
         <AreaChart width={730} height={250} data={data}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
           <defs>

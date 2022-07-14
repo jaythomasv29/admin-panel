@@ -2,4 +2,47 @@
   height: 600px;
   padding: 20px;
 
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 35px;
+      height: 35px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+    &.active {
+      color: green;
+      background-color: rgba(173, 250, 121, 0.319);
+    }
+    &.passive {
+      color: rgb(186, 131, 30);
+      background-color: rgba(246, 242, 53, 0.537);
+    }
+  }
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .viewButton {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: darkblue;
+    border: 1px solid rgba(0, 0, 139, 0.468)
+  }
+
+  .deleteButton {
+    padding: 2px 2px;
+    border-radius: 5px;
+    color: red;
+    border: 1px solid rgba(255, 0, 0, 0.439);
+  }
 }
